@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-attachment: scroll;
+    
+}
+body{
+    background-image: url(clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+    background-size: cover;
+    color: rgb(245, 245, 220);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+
+}
+nav{
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem calc((100vw - 1300px) / 2);
+    top: 0%;
+       
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 2rem;
+    text-align: left;
+    
+    top: 0px;
+    color: rgb(255, 174, 127);   
+}
+
+nav a{ 
+    text-decoration: none;
+    padding: 0rem 1.5rem;
+    float: left;
+    color: rgb(245, 245, 220); 
+}
+
+nav a:hover{
+    background-color: rgb(245, 245, 220);
+    border-radius: 10px;
+    border-top: #3e0101 solid 2px;
+}
+
+h5{
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-top: 1pc;
+}

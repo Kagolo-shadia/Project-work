@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-attachment: scroll;
+    
+}
+body{
+    background-image: url(clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+    background-size: cover;
+    color: rgb(245, 245, 220);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+
+}
+ 
+nav{
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem calc((100vw - 1300px) / 2);
+    top: 0%;
+       
+    
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 2rem;
+    text-align: left;
+    
+    top: 0px;
+    color: rgb(255, 174, 127);   
+}
+
+nav a{ 
+    text-decoration: none;
+    padding: 0rem 1.5rem;
+    float: left;
+    color: rgb(245, 245, 220); 
+}
+
+nav a:hover{
+    background-color: rgb(245, 245, 220);
+    border-radius: 10px;
+    border-top: #3e0101 solid 2px;
+}
+
+.breakfast-section{
+    padding-left: 1rem; padding-right: 1rem;
+}
+
+.breakfast-section h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-top: 7rem;
+}
+p p1 p2 p3 p4{
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 1pc;
+    margin-bottom: 10pc;
+    line-height: 1.5;
+}
+.breakfast-section h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    margin-left: 0ch;
+}
+h4{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 0ch;
+}
+
