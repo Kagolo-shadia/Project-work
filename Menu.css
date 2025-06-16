@@ -33,7 +33,6 @@ nav{
     font-weight: bold;
     padding: 0 2rem;
     text-align: left;
-    
     top: 0px;
     color: rgb(255, 174, 127);   
 }
@@ -56,7 +55,7 @@ h1{
       margin-bottom: 1rem;
       text-align: center;
       padding-top: 2rem;
-      color: #b75e20;
+      color: rgb(245, 245, 220);
 } 
 h2 {
       color: #b75e20;
