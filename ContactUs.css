@@ -75,11 +75,66 @@ p{
 }
 
 h4{
-    font-size: 0.8rem;
+    font-size: rem;
     text-align: justify;
     margin-top: 1pc;
+    font-weight: lighter;
+}
+h6{
+    font-size: 1.5rem ;
+    text-align: center;
+}
+form{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
 }
 
+label{
+    display: block;
+    font-weight: bold;
+}
+textarea, input[type="text"], input[type="email"], input[type=telephone] {
+    width: 70%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(255, 174, 127);
+    font-size: 1rem;
+    background-color: rgba(255, 174, 127, 0.568);
+}
+
+input[type=number]{
+    width: 10%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: rgba(255, 174, 127, 0.76);
+}
+select{
+    border-radius: 0.5rem;
+    width: 20%;
+    background-color: rgba(255, 174, 127, 0.685);
+}
+input[type=submit], input[type=reset]{
+    background-color: rgba(255, 174, 127, 0.861);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+input[type=reset]:hover{
+    background-color: rgb(245, 245, 220);
+    color: black;
+}
+input[type=submit]:hover{
+    background-color: rgb(245, 245, 220);
+    color: black;
+}
 h5{
     font-size: 0.8rem;
     text-align: justify;
