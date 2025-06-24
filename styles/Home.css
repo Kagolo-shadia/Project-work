@@ -7,14 +7,13 @@
     
 }
 body{
-    background-image: url(clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     color: rgb(245, 245, 220);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;    
-    
-   
+     
 }
  
 nav{
