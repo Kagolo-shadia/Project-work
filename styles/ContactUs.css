@@ -17,11 +17,12 @@ body{
 }
  
 nav{
-    height: 60px;
+    height: 95px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem calc((100vw - 1300px) / 2);
     top: 0%;
+    
        
     
 }
@@ -31,9 +32,9 @@ nav{
     font-weight: bold;
     padding: 0 2rem;
     text-align: left;
-    
     top: 0px;
-    color: rgb(255, 174, 127);   
+    color: rgb(255, 174, 127);  
+     
 }
 
 nav a{ 
@@ -41,12 +42,15 @@ nav a{
     padding: 0rem 1.5rem;
     float: left;
     color: rgb(245, 245, 220); 
+    
+    
 }
 
 nav a:hover{
     background-color: rgb(245, 245, 220);
     border-radius: 10px;
     border-top: #3e0101 solid 2px;
+    color: #3e0101;
 }
 
 .breakfast-section h1{
@@ -139,4 +143,14 @@ h5{
     font-size: 0.8rem;
     text-align: justify;
     margin-top: 1pc;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(245, 245, 220);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

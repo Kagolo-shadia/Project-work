@@ -3,21 +3,16 @@
     padding: 0px;
     box-sizing:border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-attachment: scroll;
+  
+}
+body{
     background-image: url("../images/bg.jpg");
     background-size: cover;
     color: rgb(245, 245, 220);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;    
-
-}
-body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #fff9f3;
-      color: #333;
+     
 }
 nav{
     height: 60px;
@@ -48,6 +43,7 @@ nav a:hover{
     background-color: rgb(245, 245, 220);
     border-radius: 10px;
     border-top: #3e0101 solid 2px;
+    color: #3e0101;
 }
 
 h1{
@@ -89,4 +85,14 @@ h5{
     font-size: 0.8rem;
     text-align: justify;
     margin-top: 1pc;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(245, 245, 220);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
