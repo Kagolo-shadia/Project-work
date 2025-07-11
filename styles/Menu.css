@@ -11,22 +11,31 @@ body{
     color: rgb(245, 245, 220);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;    
-     
+    background-attachment: fixed; 
+      
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content{
+    flex: 1;
+    padding: 0 20px;  
+}
+
 nav{
-    height: 60px;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem calc((100vw - 1300px) / 2);
-    top: 0%;
-       
+    padding: 1rem;
+     
 }
 
 .logo{
     font-size: 2rem;
     font-weight: bold;
-    padding: 0 2rem;
     text-align: left;
     top: 0px;
     color: rgb(255, 174, 127);   
@@ -34,9 +43,10 @@ nav{
 
 nav a{ 
     text-decoration: none;
-    padding: 0rem 1.5rem;
     float: left;
-    color: rgb(245, 245, 220); 
+    color: rgb(245, 245, 220);
+    padding-left: 1rem; 
+    padding-right: 1rem;
 }
 
 nav a:hover{
@@ -53,38 +63,37 @@ h1{
       padding-top: 2rem;
       color: rgb(245, 245, 220);
 } 
+
+.menu-intro {
+      text-align: left;
+      margin: 10px 0;
+      font-size: 1rem;
+      color: rgb(245, 245, 220);
+
+}
+
 h2 {
       color: #b75e20;
 }
+
+
+.menu-section {
+      margin-bottom: 20px;
+      margin-top: 10px;
+
+}
+    
+.menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;      
+      font-size: 17px;
+}
+
 h3{
     padding-top: 0.5rem;
     padding-bottom: 1rem;
     text-align: center;
-}
-
-.menu-section {
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      padding: 6px 0;
-      
-    }
-.menu-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 6px 0;
-      border-bottom: 1px;
-      font-size: 17px;
-}
-
-h5{
-    font-size: 0.8rem;
-    text-align: justify;
-    margin-top: 1pc;
 }
 
 footer{
@@ -92,7 +101,5 @@ footer{
     color: rgb(245, 245, 220);
     text-align: center;
     padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+       
 }

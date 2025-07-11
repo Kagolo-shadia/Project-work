@@ -6,40 +6,36 @@
     background-attachment: scroll;
     
 }
+
 body{
     background-image: url("../images/bg.jpg");
     background-size: cover;
     color: rgb(245, 245, 220);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;    
+    background-attachment: fixed; 
 
 }
  
 nav{
-    height: 95px;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem calc((100vw - 1300px) / 2);
-    top: 0%;
-    
-       
-    
+    padding-top: 1rem ;
+      
 }
 
 .logo{
     font-size: 2rem;
     font-weight: bold;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: left;
-    top: 0px;
     color: rgb(255, 174, 127);  
      
 }
 
 nav a{ 
     text-decoration: none;
-    padding: 0rem 1.5rem;
+    padding: 0rem 1rem;
     float: left;
     color: rgb(245, 245, 220); 
     
@@ -57,32 +53,40 @@ nav a:hover{
     font-size: 2.5rem;
     padding-bottom: 1rem;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
+
 }
+
+
 h2{
     font-size: 1.5rem;
     text-align: left;
     padding-top: 0.5rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
 }
+
 h3{
     font-size: 1rem;
     text-align: justify;
     margin-top: 1pc;
-    line-height: 1;
+    padding-left: 1rem;
 }
+
 p{
     font-size: 1rem;
     text-align: justify;
     line-height: 1;
     margin-top: 0.5pc;
+    padding-left: 1rem;
 }
 
 h4{
-    font-size: rem;
+    font-size: 0.9rem;
     text-align: justify;
     margin-top: 1pc;
     font-weight: lighter;
+    padding-left: 1rem;
 }
 h6{
     font-size: 1.5rem ;
@@ -92,6 +96,8 @@ form{
     margin-top: 2rem;
     border-radius: 1rem;
     max-width: 500px;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
 }
 
 label{
@@ -113,15 +119,24 @@ input[type=number]{
     padding: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px;
     font-size: 1rem;
-    background-color: rgba(255, 174, 127, 0.76);
+    background-color: rgba(255, 174, 127, 0.568);
 }
+
+
 select{
     border-radius: 0.5rem;
     width: 20%;
     background-color: rgba(255, 174, 127, 0.685);
+    cursor: pointer;
 }
+
+select:hover{
+    background-color: rgb(245, 245, 220);
+    color: black;
+}
+
 input[type=submit], input[type=reset]{
     background-color: rgba(255, 174, 127, 0.861);
     color: white;
@@ -139,18 +154,20 @@ input[type=submit]:hover{
     background-color: rgb(245, 245, 220);
     color: black;
 }
-h5{
-    font-size: 0.8rem;
-    text-align: justify;
-    margin-top: 1pc;
-}
+
 
 footer{
     background-color: rgba(0, 0, 0, 0.5);
     color: rgb(245, 245, 220);
-    text-align: center;
     padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    
+}
+
+h5{
+    text-align: center;
+    margin-top: 1pc;
+}
+
+footer p{
+    text-align: center;
 }

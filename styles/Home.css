@@ -1,35 +1,44 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: content-box;
+    box-sizing:border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-attachment: scroll;
-    
+         
 }
+
 body{
     background-image: url("../images/bg.jpg");
     background-size: cover;
     color: rgb(245, 245, 220);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;    
+    background-attachment: fixed; 
+   
      
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content{
+    flex: 1;
 }
  
 nav{
-    height: 60px;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem calc((100vw - 1300px) / 2);
-    position: sticky;
-    top: 0%;
+    padding: 1rem  ;
+        
 }
 
 
 .logo{
     font-size: 2rem;
     font-weight: bold;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: left;
     top: 0px;
     color: rgb(255, 174, 127);   
@@ -64,21 +73,8 @@ nav a:hover{
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
-.breakfast-section p2{
-    padding-left: 1rem;
-    margin-top: 2rem;
-    text-align: left;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-}
-h2{
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-top: 7rem;
-    padding-bottom: 0%;
-}
+
+
 .order{
     background-color: #3e0101;
     color: white;
@@ -87,12 +83,20 @@ h2{
     border-radius: 10px;
     cursor: pointer;
     font-size: 2rem;
+    
 }
 
 button:hover{
-    background-color: #f0e68c;
-    color: #bc1212bb;
+    background-color: rgb(245, 245, 220);
+    color: #c46d6dbb;
     border: 2px solid #3e0101;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0%;
 }
 
 footer{
@@ -100,7 +104,6 @@ footer{
     color: rgb(245, 245, 220);
     text-align: center;
     padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+   
 }
+ 
