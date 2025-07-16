@@ -1,61 +1,186 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>breakfast at my door</title>
-    <meta name="description" content="restaurant website, coffee, breakfast, delivery, Ugandan food,">
-    <link rel="stylesheet" href="../styles/index.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Breakfast at My Door</title>
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="content">
 
-            <div class="hero">
-            <nav>
-                <div class="logo">BREAKFAST AT MY DOOR</div>
-                <br>
-                <div class="nav-items">
-                    <a href="Home.html">Home</a>
-                    <a href="Menu.html">Menu</a>
-                    <a href="About.html">About</a>
-                    <a href="ContactUs.html">Contact Us</a>
-                </div>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Breakfast at My Door Logo" class="logo-img">
+                <h2>Breakfast at My Door</h2>
+            </div>
+            <nav class="navbar">
+                <a href="Home.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="About.html">About</a>
+                <a href="ContactUs.html">Contact Us</a>
+
             </nav>
-            </div>
-
-            <section class="breakfast-section">
-                <div>
-                    <h1>Welcome to Breakfast at My Door</h1>
-                    <p>Your favorite breakfast delivered right to your doorstep.</p>
-
-                    <br>
-                </div>
-            </section>
-            <div style="text-align: center; margin-top: 55px;">
-                <button class="order" onclick="document.location='Products.html'">Order Now!</button>
-            </div>
-
         </div>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Breakfast at My Door</h1>
 
-        <footer>
-            
-                <h2>This is the Home page</h2>
+                <div class="content">
+                    <h2>Warm Breakfast, Delivered to Your Door</h2>
+                    <p>Start your day the delicious way!</p>
+                    <p>Your favorite breakfast delivered fresh every morning!</p>
+                </div>
+                <div class="hero-button">
+                    <button class="btn" onclick="document.location='Menu.html'">Order Now</button>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="featured-breakfast">
+            <h2 class="section-title">Featured Breakfasts</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="pankcakes">
+                        <img src="/images/fluffy-pancakes.jpg" alt="Pancakes">
+                        <h3>Fluffy Pancakes</h3>
+                        <p> A timeless comfort breakfast — soft, sweet, and perfect for all ages.</p>
+                        <div class="price">
+                            <span>UGX 5,000/=</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/eggs and toast.jpg" alt="Eggs and Toast">
+                    <h3>Eggs & Toast</h3>
+                    <p> Balanced and protein-rich — the classic everyday breakfast staple.</p>
+                    <span> UGX 6,000/=</span>
+
+                </div>
+                <div class="card">
+                    <img src="/images/fruit smoothie bowl.jpg" alt="Smoothie Bowl">
+                    <h3>Fruit Smoothie Bowl</h3>
+                    <p> Nutritious, colorful, and refreshing — a healthy start to any morning</p>
+                    <span>UGX 15,000/=</span>
+                </div>
+                <div class="card">
+                    <img src="/images/tropical fruit plate.jpg" alt="tropical fruit plate">
+                    <h3>Tropical Fruit Plate</h3>
+                    <p> Light, vibrant, and hydrating — perfect for warm mornings and health-conscious eaters.</p>
+                    <span>UGX 10,000/=</span>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="about">
+            <h2 class="about-title">About Us</h2>
+            <div id="aboutus-content">
                 <p>
-                    &copy; 2025 Breakfast at My Door. All rights reserved.
+                    We believe breakfast is the most important meal of the day. That's why we bring freshly prepared
+                    morning
+                    meals to your doorstep every morning. Locally sourced, lovingly made.
                 </p>
-            
+                <p onclick="location.href='About.html'" id="about-link">
+                    Want to know more? Click here to visit our About page.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="order">
+            <h2 class="section-title">How to Order</h2>
+
+            <p>Browse the menu, add to cart, and place your order before 8 AM for same-day delivery.</p>
+
+            <button id="btn" onclick="document.location='Menu.html'">See Full Menu</button>
+
+            <div id="how-it-works">
+                <h3 class="section-title">How It Works</h3>
+                <div class="guide-steps">
+                    <div class="step">
+                        <img src="/images/browse.jpg" alt="Browse Menu">
+                        <p onclick="document.location='Menu.html'" style="cursor: pointer;">Browse the Menu</p>
+                    </div>
+                    <div class="arrow-right"></div>
+                    <div class="step">
+                        <img src="/images/cart.jpg" alt="Add to Cart">
+                        <p>Add to Cart</p>
+                    </div>
+                    <div class="arrow-right"></div>
+                    <div class="step">
+                        <img src="/images/order.jpg" alt="Place Your Order">
+                        <p>Place Your Order</p>
+                    </div>
+                    <div class="arrow-right"></div>
+                    <div class="step">
+                        <img src="/images/delivery.jpg" alt="Wait for Delivery">
+                        <p>Delivered to Your Door</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <h2>Contact & Location</h2>
+                    <p>📞 +256-708-963593</p>
+                    <p>📍 Kampala, Uganda</p>
+                    <p>⏰ Deliveries: 6:30 AM – 10:30 AM Daily</p>
+                </div>
+
+                <div class="footer-social">
+                    <h2>
+                        <i class="fa-solid fa-address-book"></i> Follow Us
+                    </h2>
+                    <p>
+                        <a href="mailto:kagoloshadia18@gmail.com?subject=Inquiry%20about%20Breakfast%20Menu" target="_blank" style=" text-decoration: none;">
+                            <i class="fa-solid fa-envelope"></i> info@breakfastatmydoor.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/share/1BvWCGSCED/?mibextid=wwXIfr" target="_blank"
+                            style="cursor: pointer; text-decoration: none;">
+                            <i class="fa-brands fa-facebook"></i> Facebook: BreakfastAtMyDoor</a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/kagoloshadia?igsh=MW10ZnJuejM3dTVwaw%3D%3D&utm_source=qr"
+                            target="_blank" style=" text-decoration: none;">
+
+                            <i class="fa-brands fa-instagram"></i>Instagram: @BreakfastAtMyDoor</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/kagolo-shadia-1574321a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank" style="text-decoration: none;">
+
+                            <i class="fa-brands fa-linkedin"></i>LinkedIn: BreakfastAtMyDoor </a>
+                    </p>
+                </div>
+            </div>
+
+            <p class="copyright">&copy; 2025 Breakfast at My Door. All rights reserved.</p>
         </footer>
 
+
     </div>
-
-
-
 
 </body>
 
