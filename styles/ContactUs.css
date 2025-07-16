@@ -1,189 +1,328 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing:border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-attachment: scroll;
-    
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-body{
-    background-image: url("../images/bg.jpg");
-    background-size: cover;
-    color: rgb(245, 245, 220);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-
+header {
+  background-color: rgb(255, 250, 240);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 1.2rem;
+   box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+  
 }
 
-.hero{
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    width: 100%;
-    position: sticky;
-    z-index: 1000;
-    top: 0;
-    backdrop-filter: blur(5px);
-    padding: 1rem;
-    padding-top: 0.5rem;
-   
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
- 
-nav{
-    justify-content: space-between;
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-top: 5px;
+}
+
+.logo {
+  font-weight: bold;
+  color: rgb(183, 94, 32);
+  padding-top: -2rem;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-left: -8px;
+}
+nav.navbar {
+  margin-top: -1rem;
+  text-align: left;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: right;
+  margin-bottom: -0.3rem;
+}
+
+nav.navbar a {
+  text-decoration: none;
+  color: rgb(183, 94, 32);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgb(183, 94, 32);
+  border-radius: 10px;
+  border-top: #3e0101 solid 2px;
+  color: rgb(223, 223, 219);
+  padding-top: -2px;
+  padding-bottom: -2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.contact-hero {
+  background: url("/images/bg.jpg") center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-hero-inner {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.contact-hero h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: Georgia, serif;
+  margin-top: 0rem;
+}
+
+.contact-hero h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+}
+
+/* Contact Form */
+.contact-form-section {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.contact-form-section p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"] {
+  flex: 1;
+}
+
+.submit-btn {
+  background-color: #b75e20;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #a14c1b;
+}
+
+
+
+/* Opening Hours Section */
+.opening-hours {
+  background-color: rgb(248,228,189);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.opening-hours h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.opening-hours p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.bottom-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 ;
+}
+
+.contact-left img {
+  width: 50%;
+  max-width: 50%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  margin-right: 0;
+}
+
+.newsletter-form {
+  width: 50%;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.newsletter-input-group input[type="email"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.newsletter-input-group .submit-btn {
+   background-color: #b75e20;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  white-space: nowrap;
+  margin-top: 0;
+}
+
+.newsletter-input-group .submit-btn:hover {
+  background-color: #a14c1b;
+}
+  
+footer {
+  background-color: #333;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.footer-contact h2,
+.footer-social h2{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ea965a;
+}
+
+.footer-contact p,
+.footer-social a {
+  margin: 0.3rem 0;
+  color: #eee;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-social a:hover {
+  color: #ea965a;
+  text-decoration: none;
+}
+
+footer .copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+@media screen and (max-width: 768px) {
+  .bottom-contact {
+    flex-direction: column;
     align-items: center;
-    padding-top: 1rem ;
-    
-      
-}
+  }
 
-.logo{
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 0 1rem;
-    text-align: left;
-    color: rgb(255, 174, 127);  
-     
-}
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
 
-nav a{ 
-    text-decoration: none;
-    padding: 0rem 1rem;
-    float: left;
-    color: rgb(245, 245, 220); 
-    
-    
-    
-    
-}
+  .newsletter-input-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-nav a:hover{
-    background-color: rgb(245, 245, 220);
-    border-radius: 10px;
-    border-top: #3e0101 solid 2px;
-    color: #3e0101;
-}
-
-.breakfast-section h1{
-    font-size: 2.5rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    padding-top: 3rem;
-
+  .newsletter-input-group .submit-btn {
+    width: 100%;
+  }
 }
 
 
-h2{
-    font-size: 1.5rem;
-    text-align: left;
-    padding-top: 0.5rem;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-}
-
-h3{
-    font-size: 1rem;
-    text-align: justify;
-    margin-top: 1pc;
-    padding-left: 1rem;
-}
-
-p{
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1;
-    margin-top: 0.5pc;
-    padding-left: 1rem;
-}
-
-h4{
-    font-size: 0.9rem;
-    text-align: justify;
-    margin-top: 1pc;
-    font-weight: lighter;
-    padding-left: 1rem;
-}
-h6{
-    font-size: 1.5rem ;
-    text-align: center;
-}
-form{
-    margin-top: 2rem;
-    border-radius: 1rem;
-    max-width: 500px;
-    padding-left: 1rem;
-    margin-bottom: 3rem;
-}
-
-label{
-    display: block;
-    font-weight: bold;
-}
-textarea, input[type="text"], input[type="email"], input[type=telephone] {
-    width: 70%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgb(255, 174, 127);
-    font-size: 1rem;
-    background-color: rgba(255, 174, 127, 0.568);
-}
-
-input[type=number]{
-    width: 10%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px;
-    font-size: 1rem;
-    background-color: rgba(255, 174, 127, 0.568);
-}
-
-
-select{
-    border-radius: 0.5rem;
-    width: 20%;
-    background-color: rgba(255, 174, 127, 0.685);
-    cursor: pointer;
-}
-
-select:hover{
-    background-color: rgb(245, 245, 220);
-    color: black;
-}
-
-input[type=submit], input[type=reset]{
-    background-color: rgba(255, 174, 127, 0.861);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-}
-input[type=reset]:hover{
-    background-color: rgb(245, 245, 220);
-    color: black;
-}
-input[type=submit]:hover{
-    background-color: rgb(245, 245, 220);
-    color: black;
-}
-
-
-footer{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(245, 245, 220);
-    padding: 1rem;
-    
-}
-
-h5{
-    text-align: center;
-    margin-top: 1pc;
-}
-
-footer p{
-    text-align: center;
-}

@@ -19,6 +19,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .header {
@@ -66,8 +75,7 @@ nav.navbar {
   margin-top: -1rem;
   text-align: left;
   display: flex;
-  gap: 1.5rem;
-  justify-content: right;
+  gap: 1rem;
   margin-bottom: -0.3rem;
 }
 
