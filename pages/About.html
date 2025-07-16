@@ -1,83 +1,151 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>breakfast at my door</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" href="../styles/About.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Breakfast at My Door</title>
 
 </head>
 
 <body>
-    <div class="hero">
-        <nav>
 
-            <div class="logo">BREAKFAST AT MY DOOR</div>
-            <br>
-
-            <div class="nav-items">
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Breakfast at My Door Logo" class="logo-img">
+                <h2>Breakfast at My Door</h2>
+            </div>
+            <nav class="navbar">
                 <a href="Home.html">Home</a>
                 <a href="Menu.html">Menu</a>
                 <a href="About.html">About</a>
                 <a href="ContactUs.html">Contact Us</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="about-intro">
+            <div class="breakfast-section">
+                <h1>Welcome to Breakfast at My Door</h1>
+                <h2>About Us</h2>
+                <p>
+                    Founded in 2025 by the visionary <strong>Kagolo Shadia</strong>, our restaurant has deep roots in
+                    the
+                    traditions and tastes of Ugandan cuisine.
+                    What began as a humble kitchen serving neighbours and travellers has grown into a culinary haven
+                    that
+                    honours Uganda’s rich and diverse food culture.
+                </p>
+                <p>
+                    We specialise in exotic Ugandan dishes that showcase a variety of flavours—from smoky grilled meats
+                    and
+                    creamy stews to delicately spiced vegetables and savoury banana-based staples.
+                    Every meal is a balance of tingling, tantalising tastes designed to awaken your senses and leave a
+                    lasting impression.
+                </p>
+                <p>
+                    Our food is not just made to satisfy hunger, but to create joy, warmth, and connection. More than a
+                    restaurant, we are a legacy of flavour and hospitality passed down through generations.
+                    Step into our space and experience the comforting aroma of time-honoured recipes, the welcoming
+                    spirit
+                    of our team, and a celebration of Uganda’s culinary soul.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-bottom">
+            <div class="breakfast-section">
+                <div class="mission-vision-cards">
+                    <div class=" card mission-card">
+                        <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+                        <ul>
+                            <li>Preserve and promote Uganda’s culinary heritage.</li>
+                            <li>Deliver freshly prepared, flavorful breakfasts daily.</li>
+                            <li>Create joy and connection through every meal.</li>
+                        </ul>
+                    </div>
+
+                    <div class=" card vision-card ">
+
+                        <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+                        <ul>
+                            <li>To be Uganda’s leading name in authentic breakfast delivery.</li>
+                            <li>To ensure every dish tells a story of tradition and love.</li>
+                            <li>To foster a community of satisfied, loyal customers.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-        </nav>
-    </div>
 
-    <section class="breakfast-section">
-        <h1>Welcome to Breakfast at My Door</h1>
-        <br>
-        <h4>
-            About Us
-        </h4>
-        <p>
-            Founded in 2025 by the visionary Kagolo Shadia, our restaurant has deep roots in the traditions and tastes
-            of Ugandan cuisine. What began as a humble kitchen serving neighbours and travellers has grown into a
-            culinary haven that honours the essence of Uganda’s rich and diverse food culture. Shadia’s passion for
-            bold, nourishing meals lives on in every dish we serve today.
-        </p>
-        <br>
-        <p>
-            We specialise in exotic Ugandan dishes that showcase a variety of flavours—from smoky grilled meats and
-            creamy stews to delicately spiced vegetables and savoury banana-based staples. Every meal is a balance of
-            tingling, tantalising tastes designed to awaken your senses and leave a lasting impression.
-        </p>
-        <br>
-        <p>
-            Our food is not just made to satisfy hunger, but to create joy, warmth, and connection.
-        </p>
-        <p>
-            More than a restaurant, we are a legacy of flavour and hospitality passed down through generations. Step
-            into our space and experience the comforting aroma of time-honoured recipes, the welcoming spirit of our
-            team, and a celebration of Uganda’s culinary soul. We invite you to join us and enjoy a savoury journey that
-            has been over a century in the making.
-        </p>
-        <h4>
-            Our Mission:
-        </h4>
-        <p>
-            To bring the heart of Uganda’s culinary heritage to your table, one delicious meal at a time.
-        </p>
-        <h4>
-            Our Vision:
-        </h4>
-        <p>
-            To be the leading destination for authentic Ugandan cuisine, where every dish tells a story and every guest
-            feels at home.
-        </p>
-        <br>
+            <div class="delivery-highlight hover-card ">
+                <div class="delivery-content">
+                    <div class="delivery-text">
+                        <h3><i class="fa-solid fa-truck"></i> We Deliver to Your Doorstep</h3>
+                        <p>
+                            Enjoy freshly prepared breakfast without stepping outside. We offer same-day delivery across
+                            Kampala
+                            when you order before 8:00 AM. It’s warmth, flavour, and convenience — all at your door!
+                        </p>
+                    </div>
+                    <div class="delivery-btn">
+                        <button class="btn" onclick="window.location.href='Menu.html'">Browse Menu</button>
+                    </div>
+                </div>
+            </div>
 
-    </section>
-    <footer>
-        <h5>This is the About page</h5>
-        <p>
-            &copy; 2025 Breakfast at My Door. All rights reserved.
-        </p>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <h2>Contact & Location</h2>
+                <p>📞 +256-708-963593</p>
+                <p>📍 Kampala, Uganda</p>
+                <p>⏰ Deliveries: 6:30 AM – 10:30 AM Daily</p>
+            </div>
+
+            <div class="footer-social">
+                <h2>
+                    <i class="fa-solid fa-address-book"></i> Follow Us
+                </h2>
+                <p>
+                    <a href="mailto:kagoloshadia18@gmail.com?subject=Inquiry%20about%20Breakfast%20Menu" target="_blank"
+                        style=" text-decoration: none;">
+                        <i class="fa-solid fa-envelope"></i> info@breakfastatmydoor.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/share/1BvWCGSCED/?mibextid=wwXIfr" target="_blank"
+                        style="cursor: pointer; text-decoration: none;">
+                        <i class="fa-brands fa-facebook"></i> Facebook: BreakfastAtMyDoor</a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/kagoloshadia?igsh=MW10ZnJuejM3dTVwaw%3D%3D&utm_source=qr"
+                        target="_blank" style=" text-decoration: none;">
+
+                        <i class="fa-brands fa-instagram"></i>Instagram: @BreakfastAtMyDoor</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/kagolo-shadia-1574321a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank" style="text-decoration: none;">
+
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn: BreakfastAtMyDoor </a>
+                </p>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2025 Breakfast at My Door. All rights reserved.</p>
     </footer>
 
 
