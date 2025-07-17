@@ -132,13 +132,15 @@ nav a:hover {
 }
 
 .hero {
-  height: 100vh;
+  height: 120vh;
   background-image: url("/images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(245, 245, 220);
   position: relative;
+  border-radius: 1rem;
+
 }
 
 .hero h1 {
@@ -160,6 +162,7 @@ nav a:hover {
   text-align: left;
   margin-top: -30px;
   font-size: 1.5rem;
+  
 }
 
 .hero-button {
@@ -188,12 +191,14 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   max-width: 800px;
+  border-radius: 1rem;
 }
 
 section {
   padding: 3rem 2rem;
   max-width: 1200px;
   margin: auto;
+  border-radius: 1rem;
 }
 .section-title {
   text-align: center;
@@ -273,7 +278,7 @@ section {
 
 #about {
   height: 100vh;
-  
+  border-radius: 1rem;
 }
 
 #about-link {

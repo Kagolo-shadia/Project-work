@@ -41,7 +41,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 header {
   background-color: rgb(255, 250, 240);
   padding: 1rem 2rem;
@@ -49,10 +48,16 @@ header {
   top: 0;
   z-index: 1000;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
   box-sizing: border-box;
   max-width: 800px;
   margin: 0 auto;
 }
+
 .header {
   position: sticky;
   top: 0;
@@ -66,9 +71,6 @@ header {
 }
 
 .header-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,8 +103,7 @@ nav.navbar {
   margin-top: -1rem;
   text-align: left;
   display: flex;
-  gap: 1.5rem;
-  justify-content: right;
+  gap: 1rem;
   margin-bottom: -0.3rem;
 }
 
@@ -176,10 +177,12 @@ nav a:hover {
 .menu-section {
   display: none;
   margin-top: 0;
-  max-width: 800px;
+  max-width: 500px;
   padding: 1rem;
   background: white;
   border-radius: 8px;
+ 
+
 }
 
 .menu-section:target {
@@ -195,7 +198,8 @@ nav a:hover {
 #specials,
 #drinks,
 #bakery {
-  min-width: 500px;
+  min-width: 60%;
+  
 }
 
 .menu-item {
