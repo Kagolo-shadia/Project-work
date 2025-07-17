@@ -2,6 +2,31 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fffaf0;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+  border: #b75e20 solid;
+  
+}
+
+.back-to-top:hover {
+  background-color: #a14c1b;
+  cursor: pointer;
+}
 body {
   margin: 0;
   line-height: 1.6;

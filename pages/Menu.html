@@ -2,126 +2,385 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>breakfast at my door</title>
-  <meta name="description" content="breaskfast, pancakes, eggs, sandwiches, drinks, breakfast at my door">
-  <link rel="stylesheet" href="../styles/Menu.css">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/Menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Breakfast at My Door</title>
 
 </head>
 
+
+
 <body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Breakfast at My Door Logo" class="logo-img">
+        <h2>Breakfast at My Door</h2>
+      </div>
+      <nav class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="ContactUs.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
   <div class="container">
-    <div class="content">
-      <div class="hero">
-        <nav>
-          <div class="logo">BREAKFAST AT MY DOOR</div>
-          <br>
+      <a href="#top" class="back-to-top">🔝 </a>
 
-          <div class="nav-items">
-            <a href="Home.html">Home</a>
-            <a href="Menu.html">Menu</a>
-            <a href="About.html">About</a>
-            <a href="ContactUs.html">Contact Us</a>
-          </div>
-        </nav>
+    <div class="intro-message">
+      <h2>Welcome to Breakfast at My Door! 🍳☕</h2>
+      <p>We’re so glad you're here. Scroll through or tap any category below to explore our breakfast delights. Each
+        section opens up to show what’s available. Enjoy! 😇</p>
+    </div>
+
+
+    <div class="category-nav">
+      <a class="category-btn" href="#classics">Breakfast Classics</a>
+      <a class="category-btn" href="#eggs">Eggs & More</a>
+      <a class="category-btn" href="#bakery">Bakery & Pastries</a>
+      <a class="category-btn" href="#drinks">Drinks</a>
+      <a class="category-btn" href="#specials">Specials</a>
+    </div>
+
+    <div class="menu-section default-active" id="classics">
+      <h2>Breakfast Classics</h2>
+      <div class="menu-item">
+        <img src="/images/beef samosa.jpg" alt="Beef Samosa">
+        <div class="item-details">
+          <h4>A Pair of Beef Samosa</h4>
+          <p> UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+
+        </div>
       </div>
-      <div>
-        <h1>Welcome to Breakfast at My Door</h1>
+      <div class="menu-item" id="pancakes">
+        <img src="/images/fluffy-pancakes.jpg" alt="fluffy pancakes">
+        <div class="item-details" >
+          <h4 >Fluffy Pancakes</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart" >Add to Cart</button>
+        </div>
       </div>
-      <div class="menu-intro">
-        <p>Start your day with our delicious breakfast options delivered right to your door! From classic pancakes to
-          healthy smoothies, we have something for everyone.</p>
 
-        <div class="menu-section">
-          <h2>🥞 Breakfast Classics</h2>
-          <div class="menu-item"><span>Pancakes (Plain)</span><span> 5,000/=</span></div>
-          <div class="menu-item"><span>A Pair of Beef Samosa</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Toast</span><span>3,000/=</span></div>
-          <div class="menu-item"><span>A Pair of Chicken Samosa</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Fried Cassava</span><span>3,000/=</span></div>
-          <div class="menu-item"><span>Fried Sweet Potatoes</span><span>3,000/=</span></div>
-
+      <div class="menu-item" id="eggs-toast">
+        <img src="/images/eggs and toast.jpg" alt="eggs and toast">
+        <div class="item-details">
+          <h4 >Eggs & Toast</h4>
+          <p>UGX 6,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="menu-section">
-          <h2>🍳 Eggs & More</h2>
-          <div class="menu-item"><span>Scrambled Eggs</span><span>3,000/=</span></div>
-          <div class="menu-item"><span>Sunny Side Up</span><span>2,500/=</span></div>
-          <div class="menu-item"><span>Pair of Boiled Eggs </span><span>1,500/=</span></div>
-          <div class="menu-item"><span>Egg Sandwich</span><span> 5,000/=</span></div>
+      <div class="menu-item" id="fruit-smoothie">
+        <img src="/images/fruit smoothie bowl.jpg" alt="fruit smooothie">
+        <div class="item-details">
+          <h4 >Fruit Smoothie Bowl</h4>
+          <p>UGX 15,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="menu-section">
-          <h2>🥐 Bakery & Pastries</h2>
-          <div class="menu-item"><span>Croissant (Plain)</span><span>4,000/=</span></div>
-          <div class="menu-item"><span>Chocolate Croissant</span><span>4,500/=</span></div>
-          <div class="menu-item"><span>Muffins</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Cinnamon Rolls</span><span>4,000/=</span></div>
+      <div class="menu-item" id="tropical-fruit">
+        <img src="/images/tropical fruit plate.jpg" alt="Tropical fruit plate">
+        <div class="item-details">
+          <h4 >Tropical Fruit Plate</h4>
+          <p>UGX 10,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="menu-section">
-          <h2>🥗 Healthy Choices</h2>
-          <div class="menu-item"><span>Plain Yogurt </span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Fruit Yoghurt</span><span>5,500/=</span></div>
-          <div class="menu-item"><span>Avocado Toast</span><span>3,000/=</span></div>
-          <div class="menu-item"><span>Fruit Salad</span><span>7,000/=</span></div>
+      <div class="menu-item">
+        <img src="/images/french toast.jpg" alt="Toast">
+        <div class="item-details">
+          <h4>Toast</h4>
+          <p>UGX 3,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="menu-section">
-          <h2>🥪 Sandwiches & Wraps</h2>
-          <div class="menu-item"><span>Sausage & Egg Muffin</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Beef & Egg Sandwich</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Veggie Wrap</span><span>4,500/=</span></div>
-          <div class="menu-item"><span>Chicken Sandwich</span><span>7,000/=</span></div>
-        </div>
+      <div class="menu-item">
+        <img src="/images/chicken samosa.jpg" alt="Chicken Samosa">
+        <div class="item-details">
+          <h4>A Pair of Chicken Samosa</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
 
-        <div class="menu-section">
-          <h2>🍲 Hot Dishes</h2>
-          <div class="menu-item"><span>Breakfast Sausages</span><span>2,000/=</span></div>
-          <div class="menu-item"><span>Grilled Tomatoes</span><span>2,000/=</span></div>
-          <div class="menu-item"><span>Baked Beans</span><span>3,500/=</span></div>
-        </div>
-
-        <div class="menu-section">
-          <h2>🧃 Drinks</h2>
-          <div class="menu-item"><span>Fresh Juice (Orange)</span><span>10,000/=</span></div>
-          <div class="menu-item"><span>Fresh Juice (Mango)</span><span>10,000/=</span></div>
-          <div class="menu-item"><span>Fresh Juice (Passion)</span><span>10,000/=</span></div>
-          <div class="menu-item"><span>Fresh Juice (Mixed Fruit)</span><span>15,000/=</span></div>
-          <div class="menu-item"><span>Sodas</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Tea (Black / Green)</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Herbal Tea</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Fruit Smoothies</span><span>15,000/=</span></div>
-          <div class="menu-item"><span>Espresso</span><span>25,000/=</span></div>
-          <div class="menu-item"><span>Latte / Cappuccino</span><span>20,000/=</span></div>
-          <div class="menu-item"><span>Hot Chocolate</span><span>20,000/=</span></div>
-          <div class="menu-item"><span>Milk</span><span>15,000/=</span></div>
-        </div>
-
-        <div class="menu-section">
-          <h2>🍽️ Specials</h2>
-          <div class="menu-item"><span>Chef’s Special Breakfast</span><span>25,000/=</span></div>
-          <div class="menu-item"><span>Rolex (Egg Roll)</span><span>5,000/=</span></div>
-          <div class="menu-item"><span>Katogo (Matooke & Beans)</span><span>5,500/=</span></div>
-          <div class="menu-item"><span>Katogo (Matooke & Beef)</span><span>7,000/=</span></div>
-          <div class="menu-item"><span> A Pair of Mandazi </span><span>2,000/=</span></div>
-          <div class="menu-item"><span>Kids’ Breakfast Meal</span><span>5,000/=</span></div>
-        </div>
-        <div>
-          <h3>📞 Order Now!</h3>
         </div>
       </div>
     </div>
-    <footer>
-      <h4>This is the Menu page</h4>
-      <p6>
-        &copy; 2025 Breakfast at My Door. All rights reserved.
-      </p6>
-    </footer>
 
+    <div class="menu-section" id="eggs">
+      <h2>Eggs & More</h2>
+
+      <div class="menu-item">
+        <img src="/images/boiled eggs.jpg" alt="Boiled Eggs">
+        <div class="item-details">
+          <h4>Boiled Eggs (2 pcs)</h4>
+          <p>UGX 3,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/scrambled eggs.jpg" alt="Scrambled Eggs">
+        <div class="item-details">
+          <h4>Scrambled Eggs</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/egg sandwich.jpg" alt="Egg Sandwich">
+        <div class="item-details">
+          <h4>Egg Sandwich</h4>
+          <p>UGX 6,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/omelette.jpg" alt="Plain Omelette">
+        <div class="item-details">
+          <h4>Plain Omelette</h4>
+          <p>UGX 6,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu-section" id="bakery">
+      <h2>Bakery & Pastries</h2>
+
+      <div class="menu-item">
+        <img src="/images/plain croissant.jpg" alt="Plain Croissant">
+        <div class="item-details">
+          <h4>Plain Croissant</h4>
+          <p>UGX 4,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/chocolate crossiant.jpg" alt="Chocolate Croissant">
+        <div class="item-details">
+          <h4>Chocolate Croissant</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/muffin.jpg" alt="Muffin">
+        <div class="item-details">
+          <h4>Muffin</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/cinnamon roll.jpg" alt="Cinnamon Roll">
+        <div class="item-details">
+          <h4>Cinnamon Roll</h4>
+          <p>UGX 6,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/donut.jpg" alt="Donut">
+        <div class="item-details">
+          <h4>Glazed Donut</h4>
+          <p>UGX 3,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <div class="menu-item">
+        <img src="/images/bagel.jpg" alt="Bagel">
+        <div class="item-details">
+          <h4>Toasted Bagel</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu-section" id="drinks">
+      <h2>Drinks</h2>
+
+      <div class="menu-item">
+        <img src="/images/smoothie.jpg" alt="Fruit Smoothie">
+        <div class="item-details">
+          <h4>Fruit Smoothie</h4>
+          <p>UGX 15,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/tea.jpg" alt="Tea">
+        <div class="item-details">
+          <h4>Black Tea</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/black coffee.jpg" alt="Coffee">
+        <div class="item-details">
+          <h4>Black Coffee</h4>
+          <p>UGX 8,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/hot chocolate.jpg" alt="Hot Chocolate">
+        <div class="item-details">
+          <h4>Hot Chocolate</h4>
+          <p>UGX 7,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/iced coffee.jpg" alt="Iced Coffee">
+        <div class="item-details">
+          <h4>Iced Coffee</h4>
+          <p>UGX 9,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/lemon ginger tea.jpg" alt="Lemon Ginger Tea">
+        <div class="item-details">
+          <h4>Lemon Ginger Tea</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/passion juice.jpg" alt="Passion Juice">
+        <div class="item-details">
+          <h4>Fresh Passion Juice</h4>
+          <p>UGX 7,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/mango juice.jpg" alt="Mango Juice">
+        <div class="item-details">
+          <h4>Fresh Mango Juice</h4>
+          <p>UGX 7,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/vanilla milkshake.jpg" alt="Vanilla Milkshake">
+        <div class="item-details">
+          <h4>Vanilla Milkshake</h4>
+          <p>UGX 10,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/images/bottled water.jpg" alt="Water">
+        <div class="item-details">
+          <h4>Bottled Water</h4>
+          <p>UGX 2,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu-section" id="specials">
+      <h2>Specials</h2>
+      <div class="menu-item">
+        <img src="/images/chefs special.jpg" alt="Chef's Breakfast">
+        <div class="item-details">
+          <h4>Chef's Breakfast</h4>
+          <p>UGX 25,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="../images/rolex.jpg" alt="Rolex">
+        <div class="item-details">
+          <h4>Rolex</h4>
+          <p>UGX 5,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/images/kabalagala.jpg" alt="kabalagala">
+        <div class="item-details">
+          <h4>Kabalagala</h4>
+          <p>UGX 3,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/images/fried cassava.jpg" alt="fried cassava">
+        <div class="item-details">
+          <h4>Fried Cassava</h4>
+          <p>UGX 3,000/=</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart">
+      🛒Cart
+    </div>
   </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-contact">
+        <h2>Contact & Location</h2>
+        <p>📞 +256-708-963593</p>
+        <p>📍 Kampala, Uganda</p>
+        <p>⏰ Deliveries: 6:30 AM – 10:30 AM Daily</p>
+      </div>
+      <div class="footer-social">
+        <h2><i class="fa-solid fa-address-book"></i> Follow Us</h2>
+        <p><a href="mailto:kagoloshadia18@gmail.com?subject=Inquiry%20about%20Breakfast%20Menu" target="_blank"
+            style="text-decoration: none;"><i class="fa-solid fa-envelope"></i> info@breakfastatmydoor.com</a></p>
+        <p><a href="https://www.facebook.com/share/1BvWCGSCED/?mibextid=wwXIfr" target="_blank"
+            style="text-decoration: none;"><i class="fa-brands fa-facebook"></i> Facebook: BreakfastAtMyDoor</a></p>
+        <p><a href="https://www.instagram.com/kagoloshadia?igsh=MW10ZnJuejM3dTVwaw%3D%3D&utm_source=qr" target="_blank"
+            style="text-decoration: none;"><i class="fa-brands fa-instagram"></i> Instagram: @BreakfastAtMyDoor</a></p>
+        <p><a
+            href="https://www.linkedin.com/in/kagolo-shadia-1574321a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank" style="text-decoration: none;"><i class="fa-brands fa-linkedin"></i> LinkedIn:
+            BreakfastAtMyDoor</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Breakfast at My Door. All rights reserved.</p>
+  </footer>
 </body>
+
+</html>
 
 </html>

@@ -1,6 +1,31 @@
 * {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fffaf0;
+  color: white;
+  padding: 0.1rem 0.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+  border: #b75e20 solid;
+  
+}
+
+.back-to-top:hover {
+  background-color: #a14c1b;
+  cursor: pointer;
+}
 body {
   margin: 0;
   line-height: 1.6;
@@ -22,8 +47,8 @@ header {
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;    
+  justify-content: center;
+  align-items: center;
   padding: 0 1rem;
   box-sizing: border-box;
   max-width: 800px;
@@ -99,19 +124,16 @@ nav a:hover {
 .main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;    
-  min-height: calc(100vh - 100px); 
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
   padding: 0 1rem;
   box-sizing: border-box;
   max-width: 800px;
   margin: 0 auto;
 }
 
-
-
 .breakfast-section {
-  
   padding: 3rem 2rem;
   line-height: 1.8;
   font-size: 1.1rem;
@@ -131,15 +153,14 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-.about-intro{
-  background-color: #f8e4bd;;
+.about-intro {
+  background-color: #f8e4bd;
   padding: 3rem 2rem;
   border-radius: 10px;
-  
 }
 
-.about-bottom{
-background-color:  #fffaf0;
+.about-bottom {
+  background-color: #fffaf0;
   padding: 3rem 2rem;
   border-radius: 10px;
 }
@@ -148,12 +169,12 @@ background-color:  #fffaf0;
   display: flex;
   gap: 2rem;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin-top: -1rem;
 }
 
 .card {
-  background-color: #f8e4bd ;
+  background-color: #f8e4bd;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(183, 94, 32, 0.3);
@@ -188,9 +209,6 @@ background-color:  #fffaf0;
   color: #f0e9e0;
 }
 
-
-
-
 .delivery-highlight {
   background-color: #f8e4bd;
   border-left: 6px solid #b75e20;
@@ -199,13 +217,11 @@ background-color:  #fffaf0;
   margin-top: 2rem;
 }
 
-
-
 .delivery-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -232,7 +248,6 @@ background-color:  #fffaf0;
 .delivery-btn .btn:hover {
   background-color: #a14c1b;
 }
-
 
 footer {
   background-color: #333;
