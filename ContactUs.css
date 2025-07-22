@@ -1,39 +1,14 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 100px);
-  padding: 0 1rem;
-  box-sizing: border-box;
-  max-width: 800px;
-  margin: 0 auto;
-}
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-}
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fffaf0;
-  color: white;
-  padding: 0.5rem 0.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  transition: background-color 0.3s;
-  z-index: 1000;
-  border: #b75e20 solid;
-  
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
-.back-to-top:hover {
-  background-color: #a14c1b;
-  cursor: pointer;
+body{
+  background-color: rgb(255,255,255);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+
 header {
   background-color: rgb(255, 250, 240);
   padding: 1rem 2rem;
@@ -41,10 +16,9 @@ header {
   top: 0;
   z-index: 1000;
   font-size: 1.2rem;
-   box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 800px;
   margin: 0 auto;
-  
 }
 
 .header {
@@ -113,8 +87,42 @@ nav a:hover {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fffaf0;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+  border: #b75e20 solid;
+}
+
+.back-to-top:hover {
+  background-color: #a14c1b;
+  cursor: pointer;
+}
+
 .contact-hero {
-  background: url("bg.jpg") center/cover no-repeat;
+  background: url("/images/bg.jpg") center/cover no-repeat;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -205,10 +213,8 @@ nav a:hover {
 }
 
 
-
-/* Opening Hours Section */
 .opening-hours {
-  background-color: rgb(248,228,189);
+  background-color: rgb(248, 228, 189);
   padding: 3rem 2rem;
   text-align: center;
 }
@@ -225,7 +231,6 @@ nav a:hover {
   color: #333;
 }
 
-
 .bottom-contact {
   display: flex;
   justify-content: space-between;
@@ -233,13 +238,12 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  
 }
 
 .contact-left,
 .contact-right {
-  flex: 1 ;
+  flex: 1;
 }
 
 .contact-left img {
@@ -267,7 +271,7 @@ nav a:hover {
 }
 
 .newsletter-input-group .submit-btn {
-   background-color: #b75e20;
+  background-color: #b75e20;
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -282,7 +286,7 @@ nav a:hover {
 .newsletter-input-group .submit-btn:hover {
   background-color: #a14c1b;
 }
-  
+
 footer {
   background-color: #333;
   color: white;
@@ -299,9 +303,8 @@ footer {
   margin-bottom: 2rem;
 }
 
-
 .footer-contact h2,
-.footer-social h2{
+.footer-social h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
   color: #ea965a;
@@ -326,7 +329,6 @@ footer .copyright {
   color: #aaa;
 }
 
-
 @media screen and (max-width: 768px) {
   .bottom-contact {
     flex-direction: column;
@@ -347,5 +349,3 @@ footer .copyright {
     width: 100%;
   }
 }
-
-
