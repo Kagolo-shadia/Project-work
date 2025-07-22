@@ -3,8 +3,8 @@
 
 }
 html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 .back-to-top {
   position: fixed;
@@ -33,6 +33,7 @@ body {
   color: #333;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.5rem;
+  background-color: rgb(255,250,240);
 }
 
 .container{
@@ -133,7 +134,7 @@ nav a:hover {
 
 .hero {
   height: 120vh;
-  background-image: url("bg.jpg");
+  background-image: url("/images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,6 +280,7 @@ section {
 #about {
   height: 100vh;
   border-radius: 1rem;
+  background-color: #eee;
 }
 
 #about-link {
@@ -383,6 +385,21 @@ section {
 #order h3{
   color: #333
 }
+
+.delivery{
+  position: relative;
+  animation-name: delivery;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes delivery{
+0% { left:0px;}
+100% {left:150px;}
+
+}
+
 footer {
   background-color: #333;
   color: white;
