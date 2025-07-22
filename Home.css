@@ -6,27 +6,7 @@ html{
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fffaf0;
-  color: white;
-  padding: 0.1rem 0.1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  transition: background-color 0.3s;
-  z-index: 1000;
-  border: #b75e20 solid;
-  
-}
 
-.back-to-top:hover {
-  background-color: #a14c1b;
-  cursor: pointer;
-}
 body {
   margin: 0;
   line-height: 1.6;
@@ -35,19 +15,6 @@ body {
   font-size: 1.5rem;
   background-color: rgb(255,250,240);
 }
-
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;    
-  min-height: calc(100vh - 100px); 
-  padding: 0 1rem;
-  box-sizing: border-box;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 
 header {
   background-color: rgb(255, 250, 240);
@@ -132,9 +99,44 @@ nav a:hover {
   padding-right: 5px;
 }
 
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  min-height: calc(100vh - 100px); 
+  padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fffaf0;
+  color: white;
+  padding: 0.1rem 0.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+  border: #b75e20 solid;
+  
+}
+
+.back-to-top:hover {
+  background-color: #a14c1b;
+  cursor: pointer;
+}
+
 .hero {
   height: 120vh;
-  background-image: url("/images/bg.jpg");
+  background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -462,6 +464,6 @@ footer .copyright {
     align-items: center;
   }
   .card {
-    width: 90%; /* Full width on small screens */
+    width: 90%; 
   }
 }
