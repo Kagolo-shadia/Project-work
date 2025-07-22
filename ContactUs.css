@@ -122,7 +122,7 @@ nav a:hover {
 }
 
 .contact-hero {
-  background: url("/images/bg.jpg") center/cover no-repeat;
+  background: url("bg.jpg") center/cover no-repeat;
   height: 500px;
   display: flex;
   flex-direction: column;
