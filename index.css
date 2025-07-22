@@ -134,7 +134,7 @@ nav a:hover {
 
 .hero {
   height: 120vh;
-  background-image: url("/images/bg.jpg");
+  background-image: url("Restaurant-website-project/images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -462,6 +462,6 @@ footer .copyright {
     align-items: center;
   }
   .card {
-    width: 90%; /* Full width on small screens */
+    width: 90%; 
   }
 }
