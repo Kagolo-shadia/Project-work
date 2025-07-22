@@ -122,7 +122,6 @@ nav a:hover {
 }
 
 .contact-hero {
-  background: url("bg.jpg") center/cover no-repeat;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -131,6 +130,7 @@ nav a:hover {
   position: relative;
   text-align: center;
   width: 100%;
+  background-color: rgb(255,244,229);
 }
 
 .contact-hero-inner {
@@ -141,14 +141,14 @@ nav a:hover {
 }
 
 .contact-hero h1 {
-  color: white;
+  color: rgb(183,94,32);
   font-size: 4rem;
   font-family: Georgia, serif;
   margin-top: 0rem;
 }
 
 .contact-hero h2 {
-  color: white;
+  color: rgb(183,94,32);
   font-size: 2rem;
   font-family: Georgia, serif;
 }
